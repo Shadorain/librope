@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "rope.h"
+#include "../rope.h"
 
 int main() {
   printf("AFL test harness\n");

@@ -7,7 +7,7 @@
 
 #include "tests.h"
 #include "slowstring.h"
-#include "rope.h"
+#include "../rope.h"
 
 static float rand_float() {
   return (float)random() / INT32_MAX;

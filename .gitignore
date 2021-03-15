@@ -8,7 +8,6 @@ Debug
 Release
 librope.suo
 librope.sdf
-librope.vcxproj.*
 Build
 *.dSYM
 

@@ -5,7 +5,7 @@
 #include <string.h>
 
 
-#include "rope.h"
+#include "../rope.h"
 #include "tests.h"
 
 #include "slowstring.h"
@@ -160,4 +160,3 @@ void benchmark() {
     free(strings[i]);
   }
 }
-
