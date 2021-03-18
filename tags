@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CFLAGS	Makefile	/^CFLAGS := $(CFLAGS) -arch x86_64$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-O2 -Wall -I. -std=c99$/;"	m
+MAX	rope.c	150;"	d	file:
+MIN	rope.c	149;"	d	file:
+NEEDS_TWO_WCHARS	rope.c	216;"	d	file:
+ROPE_BIAS	rope.h	43;"	d
+ROPE_FOREACH	rope.h	159;"	d
+ROPE_INVALID_UTF8	rope.h	/^typedef enum { ROPE_OK, ROPE_INVALID_UTF8 } ROPE_RESULT;$/;"	e	enum:__anon4
+ROPE_MAX_HEIGHT	rope.h	49;"	d
+ROPE_NODE_STR_SIZE	rope.h	35;"	d
+ROPE_NODE_STR_SIZE	rope.h	37;"	d
+ROPE_OK	rope.h	/^typedef enum { ROPE_OK, ROPE_INVALID_UTF8 } ROPE_RESULT;$/;"	e	enum:__anon4
+ROPE_RESULT	rope.h	/^typedef enum { ROPE_OK, ROPE_INVALID_UTF8 } ROPE_RESULT;$/;"	t	typeref:enum:__anon4
+ROPE_SIZE	rope.c	/^static const size_t ROPE_SIZE = sizeof(rope) + sizeof(rope_node) * ROPE_MAX_HEIGHT;$/;"	v	file:
+ROPE_WCHAR	rope.h	25;"	d
+UNAME	Makefile	/^UNAME := $(shell uname)$/;"	m
+_rope_check	rope.c	/^void _rope_check(rope *r) {$/;"	f
+_rope_print	rope.c	/^void _rope_print(rope *r) {$/;"	f
+alloc	rope.h	/^  void *(*alloc)(size_t bytes);$/;"	m	struct:__anon3
+alloc_node	rope.c	/^static rope_node *alloc_node(rope *r, uint8_t height) {$/;"	f	file:
+bytelen_and_check_utf8	rope.c	/^static ssize_t bytelen_and_check_utf8(const uint8_t *str) {$/;"	f	file:
+codepoint_size	rope.c	/^static inline size_t codepoint_size(uint8_t byte) {$/;"	f	file:
+count_bytes_in_utf8	rope.c	/^static size_t count_bytes_in_utf8(const uint8_t *str, size_t num_chars) {$/;"	f	file:
+count_utf8_in_wchars	rope.c	/^static size_t count_utf8_in_wchars(const uint8_t *str, size_t num_wchars) {$/;"	f	file:
+count_wchars_in_utf8	rope.c	/^static size_t count_wchars_in_utf8(const uint8_t *str, size_t num_chars) {$/;"	f	file:
+free	rope.h	/^  void (*free)(void *ptr);$/;"	m	struct:__anon3
+head	rope.h	/^  rope_node head;$/;"	m	struct:__anon3
+height	rope.h	/^  uint8_t height;$/;"	m	struct:rope_node_t
+insert_at	rope.c	/^static void insert_at(rope *r, rope_iter *iter,$/;"	f	file:
+iter_at_char_pos	rope.c	/^static rope_node *iter_at_char_pos(rope *r, size_t char_pos, rope_iter *iter) {$/;"	f	file:
+iter_at_wchar_pos	rope.c	/^static rope_node *iter_at_wchar_pos(rope *r, size_t wchar_pos, rope_iter *iter) {$/;"	f	file:
+librope_rope_h	rope.h	13;"	d
+nexts	rope.h	/^  rope_skip_node nexts[];$/;"	m	struct:rope_node_t
+node	rope.h	/^  struct rope_node_t *node;$/;"	m	struct:__anon2	typeref:struct:__anon2::rope_node_t
+node_size	rope.c	/^static size_t node_size(uint8_t height) {$/;"	f	file:
+num_bytes	rope.h	/^  size_t num_bytes;$/;"	m	struct:__anon3
+num_bytes	rope.h	/^  uint16_t num_bytes;$/;"	m	struct:rope_node_t
+num_chars	rope.h	/^  size_t num_chars;$/;"	m	struct:__anon3
+random	rope.c	/^inline static long random() {$/;"	f	file:
+random_height	rope.c	/^static uint8_t random_height() {$/;"	f	file:
+realloc	rope.h	/^  void *(*realloc)(void *ptr, size_t newsize);$/;"	m	struct:__anon3
+rope	rope.h	/^} rope;$/;"	t	typeref:struct:__anon3
+rope_append	rope.c	/^ROPE_RESULT rope_append (rope *r, const uint8_t *str) {$/;"	f
+rope_byte_count	rope.c	/^size_t rope_byte_count(const rope *r) {$/;"	f
+rope_char_count	rope.c	/^size_t rope_char_count(const rope *r) {$/;"	f
+rope_copy	rope.c	/^rope *rope_copy(const rope *other) {$/;"	f
+rope_create_cstr	rope.c	/^uint8_t *rope_create_cstr(rope *r) {$/;"	f
+rope_del	rope.c	/^void rope_del(rope *r, size_t pos, size_t length) {$/;"	f
+rope_del_at_iter	rope.c	/^static void rope_del_at_iter(rope *r, rope_node *e, rope_iter *iter, size_t length) {$/;"	f	file:
+rope_del_at_wchar	rope.c	/^size_t rope_del_at_wchar(rope *r, size_t wchar_pos, size_t wchar_num, size_t *char_len_out) {$/;"	f
+rope_free	rope.c	/^void rope_free(rope *r) {$/;"	f
+rope_insert	rope.c	/^ROPE_RESULT rope_insert(rope *r, size_t pos, const uint8_t *str) {$/;"	f
+rope_insert_at_iter	rope.c	/^static ROPE_RESULT rope_insert_at_iter(rope *r, rope_node *e, rope_iter *iter, const uint8_t *str) {$/;"	f	file:
+rope_insert_at_wchar	rope.c	/^size_t rope_insert_at_wchar(rope *r, size_t wchar_pos, const uint8_t *str) {$/;"	f
+rope_iter	rope.c	/^} rope_iter;$/;"	t	typeref:struct:__anon1	file:
+rope_new	rope.c	/^rope *rope_new() {$/;"	f
+rope_new2	rope.c	/^rope *rope_new2(void *(*alloc)(size_t bytes),$/;"	f
+rope_new_with_utf8	rope.c	/^rope *rope_new_with_utf8(const uint8_t *str) {$/;"	f
+rope_node	rope.h	/^} rope_node;$/;"	t	typeref:struct:rope_node_t
+rope_node_chars	rope.h	/^static inline size_t rope_node_chars(rope_node *n) {$/;"	f
+rope_node_data	rope.h	/^static inline uint8_t *rope_node_data(rope_node *n) {$/;"	f
+rope_node_num_bytes	rope.h	/^static inline size_t rope_node_num_bytes(rope_node *n) {$/;"	f
+rope_node_t	rope.h	/^typedef struct rope_node_t {$/;"	s
+rope_node_wchars	rope.h	/^static inline size_t rope_node_wchars(rope_node *n) {$/;"	f
+rope_skip_node	rope.h	/^} rope_skip_node;$/;"	t	typeref:struct:__anon2
+rope_wchar_count	rope.c	/^size_t rope_wchar_count(rope *r) {$/;"	f
+rope_write_cstr	rope.c	/^size_t rope_write_cstr(rope *r, uint8_t *dest) {$/;"	f
+s	rope.c	/^  rope_skip_node s[ROPE_MAX_HEIGHT];$/;"	m	struct:__anon1	file:
+skip_size	rope.h	/^  size_t skip_size;$/;"	m	struct:__anon2
+str	rope.h	/^  uint8_t str[ROPE_NODE_STR_SIZE];$/;"	m	struct:rope_node_t
+strlen_utf8	rope.c	/^static size_t strlen_utf8(const uint8_t *str) {$/;"	f	file:
+update_offset_list	rope.c	/^static void update_offset_list(rope *r, rope_iter *iter, size_t num_chars) {$/;"	f	file:
+update_offset_list	rope.c	/^static void update_offset_list(rope *r, rope_iter *iter, size_t num_chars, size_t num_wchars) {$/;"	f	file:
+wchar_size	rope.h	/^  size_t wchar_size;$/;"	m	struct:__anon2

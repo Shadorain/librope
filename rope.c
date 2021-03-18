@@ -576,6 +576,18 @@ static ROPE_RESULT rope_insert_at_iter(rope *r, rope_node *e, rope_iter *iter, c
   return ROPE_OK;
 }
 
+// Function to find the character at a certain index
+/* char rope_index(rope *r, size_t pos) { */
+/*   rope_iter iter; */
+/*   pos = MIN(pos, r->num_chars); */
+
+/*   rope_node *e = iter_at_char_pos(r, pos, &iter); */
+/*   size_t offset = pos; */
+/*   offset = e->nexts->skip_size - pos; */
+
+/*   return e->str[offset]; */
+/* } */
+
 /* Wrapper function: appends to end of rope */
 ROPE_RESULT rope_append (rope *r, const uint8_t *str) {
     return rope_insert(r, rope_byte_count(r), str);
